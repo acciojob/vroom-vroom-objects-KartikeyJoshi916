@@ -4,17 +4,16 @@ class Car{
 	this.make=make;
 	this.model=model;
 	}
-	function getMakeModel(){
+	getMakeModel(){
 		return this.make+" "+this.model;
 	}
 }
 class SportsCar extends Car{
 	constructor(make, model, topSpeed) {
-		this.make=make;
-		this.model=model;
+		super(make,model);
 		this.topSpeed=topSpeed;
 	}
-	function getTopSpeed(){
+	getTopSpeed(){
 		return this.topSpeed;
 	}
 }
