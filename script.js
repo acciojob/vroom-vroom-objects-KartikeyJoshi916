@@ -1,6 +1,6 @@
 // Complete the js code
 class Car{
-	function Car(make, model) {
+	constructor(make, model) {
 	this.make=make;
 	this.model=model;
 	}
@@ -9,7 +9,7 @@ class Car{
 	}
 }
 class SportsCar extends Car{
-	function SportsCar(make, model, topSpeed) {
+	constructor(make, model, topSpeed) {
 		this.make=make;
 		this.model=model;
 		this.topSpeed=topSpeed;
